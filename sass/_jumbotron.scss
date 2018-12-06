@@ -1,0 +1,40 @@
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 16rem 10rem 6rem 10rem;
+
+    &__text {
+        padding: 7rem 0;
+    }
+
+    &__span {
+        background-color: $color-grey-dark-2;
+        color: $color-grey-light-1;
+        font-family: $font-display;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    hr {
+        border-top: 2px solid #fff;
+        width: 15%;
+    }
+
+    // .lead {
+    //     font-size: 2rem;
+    //     text-transform: uppercase;
+    //     font-weight: 400;
+    //     color: $color-primary-dark;
+    // }
+
+    &__img {
+        height: 25rem;
+        width: 25rem;
+        display: block;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        margin: 7rem 0;
+    }
+}
+

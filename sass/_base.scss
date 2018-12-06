@@ -1,0 +1,53 @@
+// COLOR VARIABLES
+$color-primary: #09203f;
+$color-primary-dark: #537895;
+
+$color-secondary: #14407e;
+
+$color-grey-light-1: #e9ecef;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #193358;
+$color-grey-dark-2: #7593AA;
+
+// FONT VARIABLES
+$font-primary: 'Comfortaa', cursive; // Comforta 300, 400
+$font-display: 'Lato', sans-serif; // Lato 300, 300i, 400
+
+// LETTER SPACING
+$letter-spacing: .05rem;
+
+// RESPONSIVE BREAKPOINTS
+// $bp-largest: 75em;       // 1200px
+// $bp-large: 62.5em;       // 1000px
+// $bp-medium: 50em;       // 800px
+// $bp-small: 37.5em;       // 600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1 rem = 10px;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     font-size: 50%;
+    // }
+}
+
+body {
+    font-family: $font-display;
+    color: $color-grey-dark-1;
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: $letter-spacing;
+}
+
+img {
+    width: 100%;
+}
