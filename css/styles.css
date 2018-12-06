@@ -19,6 +19,10 @@ body {
 img {
   width: 100%; }
 
+hr {
+  border-top: 2px solid #fff;
+  width: 15%; }
+
 .heading-1, .heading-3, .heading-2, .heading-4 {
   font-family: "Comfortaa", cursive;
   font-weight: 400; }
@@ -72,6 +76,12 @@ img {
     .btn__outline:hover {
       color: #e9ecef; }
 
+.about {
+  background-color: #e9ecef; }
+  .about__icon {
+    font-size: 12rem;
+    padding: 3rem 0 5rem 0; }
+
 .header {
   font-family: "Comfortaa", cursive;
   font-size: 1.8rem;
@@ -103,9 +113,6 @@ img {
     font-family: "Lato", sans-serif;
     font-style: italic;
     font-weight: 300; }
-  .jumbotron hr {
-    border-top: 2px solid #fff;
-    width: 15%; }
   .jumbotron__img {
     height: 25rem;
     width: 25rem;
