@@ -56,3 +56,8 @@ hr {
     border-top: 2px solid #fff;
     width: 15%;
 }
+
+::selection {
+    background-color: #66ccff;
+    color: #fff;
+}

@@ -23,6 +23,10 @@ hr {
   border-top: 2px solid #fff;
   width: 15%; }
 
+::selection {
+  background-color: #66ccff;
+  color: #fff; }
+
 .heading-1, .heading-3, .heading-2, .heading-4 {
   font-family: "Comfortaa", cursive;
   font-weight: 400; }
@@ -132,3 +136,20 @@ hr {
     color: #e9ecef; }
   .projects--2 {
     background-color: #e9ecef; }
+
+.footer {
+  padding: 6rem 4rem 3rem 4rem;
+  background-color: #09203f;
+  color: #e9ecef; }
+  .footer__link-color {
+    color: #7593AA; }
+    .footer__link-color:hover {
+      color: #aaa; }
+  .footer__btn {
+    padding: .8rem 2rem;
+    width: 100%; }
+  .footer__border {
+    border: 1px solid #7593AA; }
+  .footer .form-control {
+    border-radius: 0;
+    border: none; }

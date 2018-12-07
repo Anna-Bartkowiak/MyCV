@@ -35,16 +35,16 @@
               <a class="my-nav-link d-block my-3 mx-4" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#">Projects</a>
+              <a class="my-nav-link d-block my-3 mx-4" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#">About me</a>
+              <a class="my-nav-link d-block my-3 mx-4" href="#about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#">Contact</a>
+              <a class="my-nav-link d-block my-3 mx-4" href="#contact">Contact</a>
             </li>
           </ul>
-            <button class="btn btn__outline m-3" type="submit">Hire me</button>
+            <a href="tel:+48791467720" class="btn btn__outline m-3"  role="button" target="_blank"><i class="fas fa-phone mr-3"></i>791 467 720</a>
         </div>
       </nav>
     </header>
@@ -64,7 +64,7 @@
                   <a class="btn btn__social mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">Linkedin</a>
                 </div>
               </div>
-              <div class="col-lg-3 offset-lg-1 align-items-center">
+              <div class="col-lg-3 offset-lg-1 d-none d-md-block align-items-center">
                 <img src="img/AniaBartkowiak-CV-foto.jpg" class="jumbotron__img" alt="CV photo AB">
               </div>
             </div>
@@ -72,14 +72,14 @@
         
       </div>
 
-      <section class="projects projects--1">
+      <section id="projects" class="projects projects--1">
         <div class="container p-5">
           <div class="row">
             <div class="col-lg-6 d-none d-md-block">
               <img src="img/totalnakosmetyka.png" alt="programming" class="projects__img rounded mt-5">
             </div>
             <div class="col-lg-5 offset-lg-1 align-self-center">
-              <h6 class="heading-2">project</h6>
+              <h6 class="heading-2 mt-5 mb-3">project</h6>
               <h3 class="heading-3 mb-4">Moje portfolio</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__outline mr-4" href="https://anna-bartkowiak.github.io/AnnCode-v0001/" role="button" target="_blank">demo</a>
@@ -93,7 +93,7 @@
         <div class="container p-5">
           <div class="row">
             <div class="col-lg-5 align-self-center">
-              <h6 class="heading-2 heading-2--dark">project</h6>
+              <h6 class="heading-2 mt-5 mb-3 heading-2--dark">project</h6>
               <h3 class="heading-3 mb-4">Landing page</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__social mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
@@ -113,7 +113,7 @@
               <img src="img/adam_portfolio.png" alt="programming" class="projects__img rounded mt-5">
             </div>
             <div class="col-lg-5 offset-lg-1 align-self-center">
-              <h6 class="heading-2">project</h6>
+              <h6 class="heading-2 mt-5 mb-3">project</h6>
               <h3 class="heading-3 mb-4">Portfolio dla grafika</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
@@ -123,7 +123,7 @@
         </div>
       </section>
 
-      <section class="about p-5">
+      <section id="about" class="about p-5">
         <div class="container p-5">
           <div class="row">
             <div class="col-lg-6">
@@ -170,42 +170,122 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="main-footer" class="p-5">
-        <div class="container">
-            <div class="row mx-auto">
-                <div class="col-md-6">
-                    &copy; 2018 Sand Lorem commodi officia repellendus ea, error modi incidunt molestiae culpa repudiandae illum qui cumque. <br>
-                    Coded by <a href="#" alt="sand logo">AnnCode</a>
+    <footer id="contact" class="footer text-sm-center text-lg-left">
+      <div class="container mt-4 mb-1">
+        <div class="row mx-auto mb-5">
+          <div class="col-md-6 col-lg-3 d-flex flex-column">
+            <p class="text-uppercase my-4">courses</p>
+            <ul class="list-unstyled">
+              <li class="my-sm-font-size">
+                <i class="fab fa-css3-alt mr-3"></i>
+                <a href="https://www.udemy.com/certificate/UC-VGB30UTI/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Advanced CSS & Sass</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <i class="fas fa-bold mr-3"></i>
+                <a href="https://www.udemy.com/certificate/UC-FH92E2RD/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Bootstrap 4</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <i class="fab fa-js-square mr-3"></i>
+                <a href="https://javascript30.com/" class="footer__link-color" target="_blank">30 Day Vanilla JS</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <i class="fab fa-free-code-camp mr-3"></i>
+                <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" class="footer__link-color" target="_blank">freeCodeCamp</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex flex-column">
+            <p class="text-uppercase my-4">resources / inspirations</p>
+            <ul class="list-unstyled">
+              <li class="my-sm-font-size">
+                <a href="https://www.w3.org/" class="footer__link-color" target="_blank">W3C</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="https://developer.mozilla.org/en-US/" class="footer__link-color" target="_blank">MDN</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="https://stackoverflow.com/" class="footer__link-color" target="_blank">Stackoverflow</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="https://www.awwwards.com/" class="footer__link-color" target="_blank">Awwwards</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="https://medium.com/topic/technology" class="footer__link-color" target="_blank">Medium</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="https://github.com/" class="footer__link-color" target="_blank">Github</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/" class="footer__link-color" target="_blank">Bootstrap</a>
+              </li>
+              <li class="my-sm-font-size">
+                <a href="https://docs.emmet.io/cheat-sheet/" class="footer__link-color" target="_blank">Emmet</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 d-flex flex-column">
+            <p class="text-uppercase my-4">contact</p> 
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-github-alt mr-3"></i>
+                <a href="https://github.com/Anna-Bartkowiak?tab=repositories" class="footer__link-color" role="button" target="_blank">Github</a>
+              </li> 
+              <li>
+                <i class="fab fa-linkedin-in mr-3"></i>
+                <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" class="footer__link-color" role="button" target="_blank">Linkedin</a>
+              </li> 
+              <li>
+                <i class="fas fa-phone mr-3"></i>
+                <a href="tel:+48791467720" class="footer__link-color" role="button" target="_blank">791 467 720</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope mr-3"></i>
+                <a href="mailto:anncodewaw@gmail.com" class="footer__link-color" role="button" target="_blank">anncodewaw@gmail.com</a>
+              </li>
+            </ul> 
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex flex-column">
+            <p class="text-uppercase my-4">message</p>
+
+            <div class="footer__contact-form">
+              <form action="" class="justify-content-center">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mt-3 mb-3" placeholder="Name">
+
+                  <input type="email" id="email" class="form-control mb-3" placeholder="E-mail">
+
+                  <textarea class="form-control" id="msg" cols="10" rows="4" placeholder="Your message"></textarea>
                 </div>
-                <div class="col-md-2">
-                    <h6>Our product</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Plans</a></li>
-                        <li><a href="#">Sign in</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h6>Our team</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Highlights</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h6>Other things</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
+
+                <button type="submit" class="btn btn__outline footer__btn">Send</button>
+              </form>
             </div>
+          </div>
         </div>
+
+        <div class="row mx-auto footer__border text-center border-left-0 border-right-0">
+          <div class="col">
+            <p class="my-3">&copy; 2018 Code by 
+              <a href="https://anna-bartkowiak.github.io/AnnCode-v0001/" class="footer__link-color" role="button" target="_blank">anncode.pl</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    
     <!-- <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
