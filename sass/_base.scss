@@ -57,6 +57,14 @@ hr {
     width: 15%;
 }
 
+.span {
+    background-color: $color-grey-dark-2;
+    color: $color-grey-light-1;
+    font-family: $font-display;
+    font-style: italic;
+    padding: .15rem;
+}
+
 ::selection {
     background-color: #66ccff;
     color: #fff;
