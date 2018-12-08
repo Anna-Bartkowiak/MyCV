@@ -44,7 +44,7 @@ body {
     font-family: $font-display;
     color: $color-grey-dark-1;
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: $letter-spacing;
 }
 
@@ -57,12 +57,25 @@ hr {
     width: 15%;
 }
 
+.lead {
+    font-size: 1.4rem;
+}
+
 .span {
     background-color: $color-grey-dark-2;
     color: $color-grey-light-1;
     font-family: $font-display;
     font-style: italic;
     padding: .15rem;
+}
+
+.link-color {
+    color: $color-grey-light-2;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-grey-dark-2;
+    }
 }
 
 ::selection {

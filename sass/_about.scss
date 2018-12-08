@@ -3,10 +3,15 @@
 
     &__icon {
         font-size: 12rem;
-        padding: 3rem 0 5rem 0;
+        padding: 8rem 0 5rem 0;
     }
 
     &__list-item {
         display: inline;
+    }
+
+    &--padding {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }

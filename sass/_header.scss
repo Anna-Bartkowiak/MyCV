@@ -26,9 +26,15 @@
             }
         }
 
-        // .navbar-brand {
-        //     margin-left: 2rem;
-        // }
+        .navbar-toggler-icon {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    &__icon-toggler {
+        font-size: 3rem;
+        color: #fff;
     }
     
 }

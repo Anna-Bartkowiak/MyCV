@@ -13,7 +13,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #193358;
   font-size: 1.6rem;
-  line-height: 2;
+  line-height: 1.7;
   letter-spacing: 0.05rem; }
 
 img {
@@ -23,12 +23,21 @@ hr {
   border-top: 2px solid #fff;
   width: 15%; }
 
+.lead {
+  font-size: 1.4rem; }
+
 .span {
   background-color: #7593AA;
   color: #e9ecef;
   font-family: "Lato", sans-serif;
   font-style: italic;
   padding: .15rem; }
+
+.link-color {
+  color: #aaa;
+  text-decoration: underline; }
+  .link-color:hover {
+    color: #7593AA; }
 
 ::selection {
   background-color: #66ccff;
@@ -91,9 +100,12 @@ hr {
   background-color: #e9ecef; }
   .about__icon {
     font-size: 12rem;
-    padding: 3rem 0 5rem 0; }
+    padding: 8rem 0 5rem 0; }
   .about__list-item {
     display: inline; }
+  .about--padding {
+    padding-left: 5rem;
+    padding-right: 5rem; }
 
 .header {
   font-family: "Comfortaa", cursive;
@@ -113,6 +125,12 @@ hr {
     color: #e9ecef; }
     .header nav .my-nav-link:hover {
       background-size: 4px 50px; }
+  .header nav .navbar-toggler-icon {
+    height: 3rem;
+    width: 3rem; }
+  .header__icon-toggler {
+    font-size: 3rem;
+    color: #fff; }
 
 .jumbotron {
   margin-bottom: 0;
