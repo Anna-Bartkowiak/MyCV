@@ -3,18 +3,34 @@
     border-radius: 0;
     padding: 16rem 10rem 6rem 10rem;
 
+    @media only screen and (max-width: 1199.98px) { 
+        padding: 10rem 8rem 2rem 8rem;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        padding: 10rem 4rem 2rem 4rem;
+    }
+
+    @media only screen and (max-width: 575.98px) { 
+        padding: 10rem 0 2rem 0;
+    }
+
     &__text {
-        padding: 7rem 0;
+        padding: 7rem 3rem 7rem 0;
+
+        @media only screen and (max-width: 767.98px) {
+            padding: 5rem 0 5rem 0;
+        }
     }
 
     &__img {
-        height: 25rem;
-        width: 25rem;
+        max-height: 25rem;
+        max-width: 25rem;
         display: block;
         border-radius: 50%;
         background-position: center;
         background-size: cover;
-        margin: 7rem 0;
+        margin: 7rem auto;
     }
 }
 

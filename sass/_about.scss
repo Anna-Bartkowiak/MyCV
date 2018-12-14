@@ -1,9 +1,24 @@
 .about {
     background-color: #e9ecef;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 1199.98px) { 
+        padding: 0;
+    }
 
     &__icon {
         font-size: 12rem;
         padding: 8rem 0 5rem 0;
+
+        @media only screen and (max-width: 1199.98px) { 
+            font-size: 10rem;
+            padding-top: 5rem;
+        }
+
+        @media only screen and (max-width: 575.98px) { 
+            font-size: 8rem;
+            padding-top: 3.5rem;
+        }
     }
 
     &__list-item {
@@ -13,5 +28,12 @@
     &--padding {
         padding-left: 5rem;
         padding-right: 5rem;
+        padding-bottom: 5rem;
+
+        @media only screen and (max-width: 575.98px) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 2rem;
+        }
     }
 }

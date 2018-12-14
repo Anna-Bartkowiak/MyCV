@@ -3,6 +3,10 @@
     background-color: $color-primary;
     color: $color-grey-light-1;
 
+    @media only screen and (max-width: 1199.98px) { 
+        padding-top: 3rem;
+    }
+
     &__link-color {
         color: $color-grey-dark-2;
 

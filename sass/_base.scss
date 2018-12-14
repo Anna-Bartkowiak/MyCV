@@ -18,10 +18,11 @@ $font-display: 'Lato', sans-serif; // Lato 300, 300i, 400
 $letter-spacing: .05rem;
 
 // RESPONSIVE BREAKPOINTS
-// $bp-largest: 75em;       // 1200px
-// $bp-large: 62.5em;       // 1000px
-// $bp-medium: 50em;       // 800px
-// $bp-small: 37.5em;       // 600px
+// $bp-largest: 75%;       // 1200px
+// $bp-large: 62.5%;       // 1000px
+// $bp-medium: 50%;       // 800px
+// $bp-small: 37.5%;       // 600px
+
 
 *,
 *::before,
@@ -35,9 +36,30 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1 rem = 10px;
 
-    // @media only screen and (max-width: $bp-largest) {
-    //     font-size: 50%;
-    // }
+
+    // Medium devices (tablets, 768px and up)
+    @media only screen and (max-width: 991.98px) { 
+        font-size: 62.5%;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media only screen and (max-width: 1199.98px) { 
+        font-size: 62.5%;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media only screen and (min-width: 1200px) { 
+        font-size: 62.5%;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media only screen and (max-width: 767.98px) {
+        font-size: 50%;
+    }
+
+    //Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) { 
+        font-size: 37.5%;
+    }
 }
 
 body {
@@ -48,8 +70,9 @@ body {
     letter-spacing: $letter-spacing;
 }
 
-img {
-    width: 100%;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 hr {

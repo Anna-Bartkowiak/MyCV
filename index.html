@@ -25,26 +25,29 @@
   <body>
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top header__my-bg-dark">
-        <a class="navbar-brand ml-5 my-3" href="#"><img src="img/anncode copy.png" alt="anncode logo"></a>
+        <a class="navbar-brand my-3" href="#"><img src="img/anncode copy.png" alt="anncode logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars header__icon-toggler"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav text-right m-auto">
             <li class="nav-item active">
-              <a class="my-nav-link d-block my-3 mx-4" href="#">Home<span class="sr-only">(current)</span></a>
+              <a class="my-nav-link d-inline-block my-3 mx-4" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#projects">Projects</a>
+              <a class="my-nav-link d-inline-block my-3 mx-4" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#about">About me</a>
+              <a class="my-nav-link d-inline-block my-3 mx-4" href="#about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-block my-3 mx-4" href="#contact">Contact</a>
+              <a class="my-nav-link d-inline-block my-3 mx-4" href="#contact">Contact</a>
             </li>
           </ul>
-            <a href="#contact" class="btn btn__outline m-3"  role="button" target="_blank">HIRE ME</a>
+          <div class="d-flex justify-content-end">
+              <a href="#contact" class="btn btn__outline m-3"  role="button">HIRE ME</a>
+          </div>
+            
         </div>
       </nav>
     </header>
@@ -53,18 +56,18 @@
       <div class="jumbotron my-jumbotron">
         <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="jumbotron__text align-items-center">
+              <div class="col-lg-9">
+                <div class="jumbotron__text">
                   <h6 class="heading-2 heading-2--dark mb-5">curriculum vitae</h6>
                   <h1 class="heading-1 mb-5">Junior<span class="span"> Frontend </span>Developer</h1>
                   <h2 class="heading-4">Anna Bartkowiak</h2>
                   <hr class="my-5">
-                  <p class="pb-5">Jestem nastawiona na rozwój zawodowy, dlatego stale się dokształcam uczestnicząc w różnego rodzaju kursach i wydarzeniach. Jestem osobą skrupulatną i dobrze zorganizowaną co pomaga mi utrzymać oraz usprawnić dobrą jakość mojej pracy. Lubię pracować z ludźmi o otwartych umysłach i poczuciem humoru, jednak samodzielna praca również sprawia mi przyjemność.</p>
+                  <p class="pb-5">I am focused on professional development, which is why I am constantly learning to participate in various courses and events. I am a meticulous and well-organized what helps me to maintain and improve the quality of my work. I like working with people with open minds and a sense of humor, but independent work also gives me pleasure.</p>
                   <a class="btn btn__social mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">Github</a>
                   <a class="btn btn__social mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">Linkedin</a>
                 </div>
               </div>
-              <div class="col-lg-3 offset-lg-1 d-md-block align-items-center">
+              <div class="col-lg-3 d-none d-lg-block">
                 <img src="img/AniaBartkowiak-CV-foto.jpg" class="jumbotron__img" alt="CV photo AB">
               </div>
             </div>
@@ -78,12 +81,12 @@
             <div class="col-lg-6 d-md-block">
               <img src="img/totalnakosmetyka.png" alt="programming" class="projects__img rounded mt-5">
             </div>
-            <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="projects__text col-lg-5 offset-lg-1 align-self-center">
               <h6 class="heading-2 mt-5 mb-3">project</h6>
-              <h3 class="heading-3 mb-4">Moje portfolio</h3>
+              <h3 class="heading-3 mb-4">My portfolio</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__outline mr-4" href="https://anna-bartkowiak.github.io/AnnCode-v0001/" role="button" target="_blank">demo</a>
-              <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak/AnnCode-v0001.git" role="button" target="_blank">&lt;kod&gt;</a>
+              <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak/AnnCode-v0001.git" role="button" target="_blank">code</a>
             </div>
           </div>
         </div>
@@ -92,14 +95,14 @@
       <section class="projects projects--2">
         <div class="container p-5">
           <div class="row">
-            <div class="col-lg-5 align-self-center">
+            <div class="projects__text col-lg-5 order-md-2 align-self-center">
               <h6 class="heading-2 mt-5 mb-3 heading-2--dark">project</h6>
               <h3 class="heading-3 mb-4">Landing page</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__social mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
-              <a class="btn btn__social mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">&lt;kod&gt;</a>
+              <a class="btn btn__social mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">code</a>
             </div>
-            <div class="col-lg-6 offset-lg-1 d-md-block">
+            <div class="col-lg-6 order-md-1 offset-lg-1 d-md-block">
                 <img src="img/bootstrap4-project.png" alt="programming" class="projects__img rounded mt-5">
               </div>
           </div>
@@ -112,81 +115,81 @@
             <div class="col-lg-6 d-md-block">
               <img src="img/adam_portfolio.png" alt="programming" class="projects__img rounded mt-5">
             </div>
-            <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="projects__text col-lg-5 offset-lg-1 align-self-center">
               <h6 class="heading-2 mt-5 mb-3">project</h6>
-              <h3 class="heading-3 mb-4">Portfolio dla grafika</h3>
+              <h3 class="heading-3 mb-4">Portfolio for graphic designer</h3>
               <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
               <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
-              <a class="btn btn__outline mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">&lt;kod&gt;</a>
+              <a class="btn btn__outline mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">code</a>
             </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="about p-5">
-        <div class="container p-5">
+        <div class="container px-5 pt-5">
           <div class="row">
             <div class="col-lg-6 about--padding">
               <!-- <i class="fas fa-brain about__icon py-5"></i> -->
               <i class="fas fa-user-cog about__icon"></i>
               <h3 class="heading-4 heading-4--dark mb-4">skills</h3>
               <hr class="my-5">
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">writing semantic HTML</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Knowledge of how CSS works behind the scenes: the cascade, specificity, inheritance, etc</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Building a project with <span class="span">CSS Grid and flexbox</span></p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">CSS architecture: component-based design, <span class="span">BEM</span>, writing reusable code</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Using <span class="span">Sass</span> in projects: global variables, architecting CSS, managing media queries</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Building responsive design: <span class="span">media queries</span>, images in HTML and CSS for faster pageloads, em / rem units, etc</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5"><span class="span">SVG</span> images and videos in HTML and CSS: building a background video effect</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Creating <span class="span">NPM</span> ecosystem: development workflows and building processes</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Coding responsive websites in <span class="span">Bootstrap 4</span></p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Git, <span class="span">GitHub</span>, and command-line basics</p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">Understanding <span class="span">JavaScript</span> basics like <span class="span">Object-oriented Programming</span></p>
               </div>
 
-              <div>
+              <div class="py-2">
                 <i class="fas fa-caret-right d-inline mr-2"></i>
                 <p class="d-inline mb-5">CSS <span class="span">animations</span> with @keyframes, animation and transition</p>
               </div>
@@ -202,23 +205,23 @@
                 <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Kodilla</span>, (12.2016-02.2017)</p>
                 <p><span class="span">Front-end Developer</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Ukończenie intensywnego BOOTCAMP-u tworzenia front-endu oraz stosowania technologii i języków: HTML5, CSS3, RWD, Bootstrap, Sass, Git, jQuery, Javascript.</p>
+                <p class="d-inline mr-2">I have completed an intensive BOOTCAMP in front-end creation and application of technologies and languages: HTML5, CSS3, RWD, Bootstrap, Sass, Git, jQuery, Javascript.</p>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-certificate d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Uniwersytet Warszawski</span>, (2016-01 – 2016-12)</p>
-                <p><span class="span">Mikrobiologia</span>, higiena, środowisko, bezpieczeństwo i jakość w praktyce przemysłowej, <span class="text-secondary font-italic">Podyplomowe</span></p>
+                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">university of warsaw</span>, (2016-01 – 2016-12)</p>
+                <p><span class="span">Microbiology</span>, hygiene, environment, safety and quality in industrial practice, <span class="text-secondary font-italic">Postgraduate</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Nabycie umiejętności audytora wewnętrznego systemu zarządzania laboratorium i audyt jakości zgodnie z normą PN-EN ISO/IEC 17025.</p>
+                <p class="d-inline mr-2">I acquired the skills of an internal auditor of the laboratory management system and a quality audit in accordance with PN-EN ISO / IEC 17025.</p>
               </div>
 
-              <div class="my-5">
+              <div class="mt-5">
                 <i class="fas fa-certificate d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Zachodniopomorski Uniwersytet Technologiczny</span> w Szczecinie, (2010-10 – 2015-09)</p>
-                <p><span class="span">Technologia Żywności i Żywienie Człowieka</span>, <span class="text-secondary font-italic">Inżynier</span></p>
+                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">WEST POMERANIAN UNIVERSITY OF TECHNOLOGY</span> in Szczecin, (2010-10 – 2015-09)</p>
+                <p><span class="span">Food Technology and human nutrition</span>, <span class="text-secondary font-italic">Engineer</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Auditor wewnętrzny systemu zarządzania bezpieczeństwem żywności wg normy ISO 22000, HACCP, Codex Alimentarius, GMP, GHP. Znajomość technologii produkcji żywności oraz żywienia człowieka, układania planów dietetycznych.</p>
+                <p class="d-inline mr-2">Internal auditor of the food safety management system according to ISO 22000, HACCP, Codex Alimentarius, GMP, GHP. Knowledge of food production technology and human nutrition, laying out diet plans.</p>
               </div>
             </div>
 
@@ -228,50 +231,50 @@
               <hr class="my-5">
               <div class="my-5">
                 <i class="fas fa-briefcase mr-2"></i>
-                <p class="d-inline mb-5"><span class="text-uppercase">AnnCode</span>, (06.2017 - obecnie)</p>
+                <p class="d-inline mb-5"><span class="text-uppercase">AnnCode</span>, (06.2017 - currently)</p>
                 <p><span class="span">Freelance</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">projektowanie i tworzenie estetycznych, responsywnych stron internet d-inlinestrony wizualnej, korzystanie z narzędzi wspomagających pracę np. Node.js, NPM, webpack, Gulp, GIT, BEM, tworzenie stron z wykorzystaniem biblioteki Bootstrap</p>
+                <p class="d-inline mr-2">Designing and creating aesthetic, responsive websites from the visual side, using tools supporting work eg Node.js, NPM, webpack, Gulp, GIT, BEM, creating pages using the Bootstrap library.</p>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-briefcase mr-2"></i>
-                <p class="d-inline mb-5"><span class="text-uppercase">Konsultant ds. Żywienia</span>, (05.2017 - obecnie)</p>
+                <p class="d-inline mb-5"><span class="text-uppercase">Consultant for Nutrition</span>, (05.2017 - currently)</p>
                 <p><span class="span">Freelance</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">współpraca z dietetykiem przy układaniu planów dietetyczych</p>
+                <p class="d-inline mr-2">Cooperation with a dietician in the preparation of diet plans.</p>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-briefcase mr-2"></i>
                 <p class="d-inline mb-5"><span class="text-uppercase">Royal Greenland Seafood</span>, (2016-10 – 2016-11)</p>
-                <p><span class="span">Kontroler jakości</span></p>
+                <p><span class="span">Quality controller</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">kontrolowałam jakość surowca, zgodność produktów ze specyfikacją, poprawność etykiet, prowadziłam dokumentację związaną z nadzorowaniem produkcji, byłam odpowiedzialna za dopuszczenie pracowników i hali produkcyjnej do produkcji</p>
+                <p class="d-inline mr-2">I controlled the quality of the raw material, compliance of the products with the specification, correctness of the labels, I kept documentation related to the supervision of production, I was responsible for the admission of workers and the production hall for production.</p>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-briefcase mr-2"></i>
                 <p class="d-inline mb-5"><span class="text-uppercase">Revenue Group</span>, (2016-02 - 2016-07)</p>
-                <p><span class="span">Specjalista ds. administracji</span></p>
+                <p><span class="span">Administration specialist</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">przygotowywałam oferty/ wyniki działań e-marketingowych firmy, organizowałam pracę biura oraz dokumenty administracyjne, nawiązywałam i utrzymywałam stały kontakt z klientami</p>
+                <p class="d-inline mr-2">I prepared offers / results of e-marketing activities of the company, organized the office and administrative documents, and established and maintained constant contact with clients.</p>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-briefcase mr-2"></i>
                 <p class="d-inline mb-5"><span class="text-uppercase">Polska Press Grupa</span>, (2015-08 – 2016-01)</p>
-                <p><span class="span">Recepcjonistka</span></p>
+                <p><span class="span">Receptionist</span></p>
                 <i class="fas fa-caret-right mr-2"></i>
-                <p class="d-inline mr-2">organizowałam pracę biura oraz dokumenty administracyjne, wspomagałam Asystentkę Zarządu, pracowników biura handlowego i redakcji</p>
+                <p class="d-inline mr-2">I organized the office's work and administrative documents, assisted the Management Board's assistant, employees of the sales office and the editorial office.</p>
               </div>
 
-              <div class="my-5">
+              <div class="mt-5">
                 <i class="fas fa-briefcase mr-2"></i>
                 <p class="d-inline mb-5"><span class="text-uppercase">Herbalife</span>, (2012-03 – 2013-04)</p>
-                <p><span class="span">Recepcjonistka</span></p>
+                <p><span class="span">Consultant for Nutrition</span></p>
                 <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">prowadziłam indywidualne doradztwo żywieniowe oraz warsztaty z zakresu żywienia</p>
+                <p class="d-inline mr-2">I ran individual nutrition consultancy and nutrition workshops.</p>
               </div>
             </div>
 
@@ -281,58 +284,47 @@
               <hr class="my-5">
               <div class="my-5">
                 <i class="fas fa-book-reader d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">popular science and psychological</span></p>
-                <i class="fas fa-caret-right mr-2"></i>
-                <p class="d-inline mr-2">I like to learn and develop, that's why I read a lot. Recently, I read "Crushing It!" G.Vaynerchuk, who made me aware of the power of social media and personal branding.</p>
+                <p class="d-inline pr-4"><span class="text-uppercase">popular science & psychological</span></p>
+                <div class="my-4">
+                  <i class="fas fa-caret-right mr-2"></i>
+                  <p class="d-inline mr-2">I like to learn and develop, that's why I read a lot. Recently, I read "Crushing It!" G. Vaynerchuk, who made me aware of the power of social media and personal branding.</p>
+                </div>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-user-secret d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">crime, detective literature</span></p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">I am a fan of mysteries and sectrets. Together with the hero, I can gather facts, solve puzzles and try to understand the psyche and motives of people's actions. Recently, I read the "Crime and Punishment", in which F. Dostoyevsky immensely touchingly and insightfully depicts the motives of the crime and the fight against remorse.</p>
+                <p class="d-inline pr-4"><span class="text-uppercase">crime & detective literature</span></p>
+                <div class="my-4">
+                  <i class="fas fa-caret-right d-inline mr-2"></i>
+                  <p class="d-inline mr-2">I am a fan of mysteries and secrets. Together with the hero, I can gather facts, solve puzzles and try to understand the psyche and motives of people's actions. Recently, I read the "Crime and Punishment" in which F. Dostoyevsky immensely touchingly and insightfully depicts the motives of the crime and the fight against remorse.</p>
+                </div>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-dragon d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">fantasy</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">The fantasy world is a real feast for me. Here I can let my imagination run wild. Once again, I read Harry Potter, who with his modesty, kindness, cleverness and intelligence is a model not only for the little ones.</p>
+                <p class="d-inline pr-4"><span class="text-uppercase">fantasy</p>
+                <div class="my-4">
+                  <i class="fas fa-caret-right d-inline mr-2"></i>
+                  <p class="d-inline mr-2">The fantasy world is a real feast for me. Here I can let my imagination run wild. Now I have read again Harry Potter, who with his modesty, kindness, cleverness and intelligence is a model not only for the little ones.</p>
+                </div>
               </div>
 
               <div class="my-5">
                 <i class="fas fa-puzzle-piece d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">puzzle & games</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Laying puzzle pieces stimulates my creativity, teaches concentration, planning own activities and design skills. My last stacked <a href="https://sklep.trefl.com/pl/popoludniowa-sielanka.html" class="link-color" target="_blank">puzzle</a> had 4,000 elements and a beautiful landscape.</p>
+                <p class="d-inline pr-4"><span class="text-uppercase">puzzle & games</p>
+                <div class="my-4">
+                  <i class="fas fa-caret-right d-inline mr-2"></i>
+                  <p class="d-inline mr-2">Laying puzzle pieces stimulates my creativity, teaches concentration, planning own activities and design skills. My last stacked <a href="https://sklep.trefl.com/pl/popoludniowa-sielanka.html" class="link-color" target="_blank">puzzle</a> had 4,000 elements and a beautiful landscape. And now I'm learning to play chess.</p>
+                </div>
               </div>
 
-              <div class="my-5">
+              <div class="mt-5">
                 <i class="fas fa-apple-alt d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Zachodniopomorski</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Auditor wewnętrzny systemu zarządzania bezpieczeństwem żywności wg normy ISO 22000.</p>
-              </div>
-
-              <div class="my-5">
-                <i class="fas fa-bicycle d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Uniwersytet</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Nabycie umiejętności audytora wewnętrznego systemu zarządzania laboratorium i audyt jakości zgodnie z normą PN-EN ISO/IEC 17025.</p>
-              </div>
-
-              <div class="my-5">
-                <i class="fas fa-swimmer d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Zachodniopomorski</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Auditor wewnętrzny systemu zarządzania bezpieczeństwem żywności wg normy ISO 22000.</p>
-              </div>
-
-              <div class="my-5">
-                <i class="fas fa-dumbbell d-inline mr-2"></i>
-                <p class="d-inline mb-5 pr-4"><span class="text-uppercase">Zachodniopomorski</p>
-                <i class="fas fa-caret-right d-inline mr-2"></i>
-                <p class="d-inline mr-2">Auditor wewnętrzny systemu zarządzania bezpieczeństwem żywności wg normy ISO 22000.</p>
+                <p class="d-inline pr-4"><span class="text-uppercase">health & nutrition</p>
+                <div class="my-4">
+                  <i class="fas fa-caret-right d-inline mr-2"></i>
+                  <p class="d-inline mr-2">I have always been interested in the subject of health. That's why I regularly exercise, I ride my bike everywhere, in the summer I go roller-skating and in the winter ice-skating and snowboarding. I devote a lot of time to preparing healthy, well-balanced meals, and I care for my mental health by reading, playing developing games or constantly learning new skills such as programming or the Czech language.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -387,6 +379,11 @@
               <li class="my-sm-font-size">
                 <i class="fab fa-free-code-camp mr-3"></i>
                 <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" class="footer__link-color" target="_blank">freeCodeCamp</a>
+              </li>
+
+              <li class="my-sm-font-size">
+                <i class="fas fa-sync-alt mr-3"></i>
+                <a href="https://www.udemy.com/certificate/UC-9DYUF83K/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Basics of Scrum, Agile and Project Delivery </a>
               </li>
 
               <li class="my-sm-font-size">

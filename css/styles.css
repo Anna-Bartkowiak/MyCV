@@ -8,6 +8,21 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 991.98px) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 1199.98px) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (min-width: 1200px) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 767.98px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 575.98px) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -16,8 +31,9 @@ body {
   line-height: 1.7;
   letter-spacing: 0.05rem; }
 
-img {
-  width: 100%; }
+.row {
+  margin-left: 0;
+  margin-right: 0; }
 
 hr {
   border-top: 2px solid #fff;
@@ -43,6 +59,25 @@ hr {
   background-color: #66ccff;
   color: #fff; }
 
+/*
+0 - 575.98px:       Phone portrait
+576px - 767.98px:   Phone landscape
+768px - 991.98px;   Tablet portrait
+992px - 1199.98px;  Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800 + :        Big desktop
+
+Breakpoint argument choices:
+- phone-port
+- phone-land
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .heading-1, .heading-3, .heading-2, .heading-4 {
   font-family: "Comfortaa", cursive;
   font-weight: 400; }
@@ -51,6 +86,9 @@ hr {
   font-size: 4.5rem;
   color: #14407e;
   line-height: 1; }
+  @media only screen and (max-width: 1199.98px) {
+    .heading-1 {
+      font-size: 4rem; } }
 
 .heading-3 {
   font-size: 3.8rem;
@@ -59,6 +97,9 @@ hr {
     color: #e9ecef; }
   .heading-3--dark {
     color: #193358; }
+  @media only screen and (max-width: 1199.98px) {
+    .heading-3 {
+      font-size: 3rem; } }
 
 .heading-2 {
   font-size: 1rem;
@@ -97,15 +138,33 @@ hr {
       color: #e9ecef; }
 
 .about {
-  background-color: #e9ecef; }
+  background-color: #e9ecef;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 1199.98px) {
+    .about {
+      padding: 0; } }
   .about__icon {
     font-size: 12rem;
     padding: 8rem 0 5rem 0; }
+    @media only screen and (max-width: 1199.98px) {
+      .about__icon {
+        font-size: 10rem;
+        padding-top: 5rem; } }
+    @media only screen and (max-width: 575.98px) {
+      .about__icon {
+        font-size: 8rem;
+        padding-top: 3.5rem; } }
   .about__list-item {
     display: inline; }
   .about--padding {
     padding-left: 5rem;
-    padding-right: 5rem; }
+    padding-right: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 575.98px) {
+      .about--padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem; } }
 
 .header {
   font-family: "Comfortaa", cursive;
@@ -113,6 +172,11 @@ hr {
   font-weight: 400; }
   .header__my-bg-dark {
     background-color: #09203f; }
+  .header nav .navbar-brand {
+    margin-left: 3rem; }
+    @media only screen and (max-width: 575.98px) {
+      .header nav .navbar-brand {
+        margin-left: 1rem; } }
   .header nav .my-nav-link {
     padding: .6rem;
     background: linear-gradient(to bottom, #537895 0%, #537895 100%);
@@ -123,11 +187,25 @@ hr {
     line-height: 3rem;
     text-decoration: none;
     color: #e9ecef; }
+    @media only screen and (max-width: 1199.98px) {
+      .header nav .my-nav-link {
+        background-size: 3px 18px; } }
+    @media only screen and (max-width: 991.98px) {
+      .header nav .my-nav-link {
+        background-size: 3px 2px; } }
     .header nav .my-nav-link:hover {
       background-size: 4px 50px; }
   .header nav .navbar-toggler-icon {
     height: 3rem;
     width: 3rem; }
+  .header nav img {
+    width: 100%; }
+    @media only screen and (max-width: 767.98px) {
+      .header nav img {
+        width: 65%; } }
+    @media only screen and (max-width: 575.98px) {
+      .header nav img {
+        width: 55%; } }
   .header__icon-toggler {
     font-size: 3rem;
     color: #fff; }
@@ -136,22 +214,51 @@ hr {
   margin-bottom: 0;
   border-radius: 0;
   padding: 16rem 10rem 6rem 10rem; }
+  @media only screen and (max-width: 1199.98px) {
+    .jumbotron {
+      padding: 10rem 8rem 2rem 8rem; } }
+  @media only screen and (max-width: 767.98px) {
+    .jumbotron {
+      padding: 10rem 4rem 2rem 4rem; } }
+  @media only screen and (max-width: 575.98px) {
+    .jumbotron {
+      padding: 10rem 0 2rem 0; } }
   .jumbotron__text {
-    padding: 7rem 0; }
+    padding: 7rem 3rem 7rem 0; }
+    @media only screen and (max-width: 767.98px) {
+      .jumbotron__text {
+        padding: 5rem 0 5rem 0; } }
   .jumbotron__img {
-    height: 25rem;
-    width: 25rem;
+    max-height: 25rem;
+    max-width: 25rem;
     display: block;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    margin: 7rem 0; }
+    margin: 7rem auto; }
 
 .projects {
   padding: 5rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 767.98px) {
+    .projects {
+      padding: 3rem; } }
+  @media only screen and (max-width: 575.98px) {
+    .projects {
+      padding: 0; } }
   .projects__img {
-    box-shadow: -5rem -5rem rgba(83, 120, 149, 0.5); }
+    box-shadow: -5rem -5rem rgba(83, 120, 149, 0.5);
+    width: 100%; }
+    @media only screen and (max-width: 1199.98px) {
+      .projects__img {
+        box-shadow: -4rem -4rem rgba(83, 120, 149, 0.5); } }
+    @media only screen and (max-width: 991.98px) {
+      .projects__img {
+        box-shadow: none;
+        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 575.98px) {
+    .projects__text {
+      padding-bottom: 3rem; } }
   .projects--1, .projects--3 {
     background-color: #09203f;
     color: #e9ecef; }
@@ -162,6 +269,9 @@ hr {
   padding: 6rem 4rem 3rem 4rem;
   background-color: #09203f;
   color: #e9ecef; }
+  @media only screen and (max-width: 1199.98px) {
+    .footer {
+      padding-top: 3rem; } }
   .footer__link-color {
     color: #7593AA; }
     .footer__link-color:hover {
