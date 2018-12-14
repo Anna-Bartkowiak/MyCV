@@ -145,7 +145,7 @@ ORDER: base + typography > general layout + grid > page layout > components
       padding: 0; } }
   .about__icon {
     font-size: 12rem;
-    padding: 8rem 0 5rem 0; }
+    padding: 5rem 0 5rem 0; }
     @media only screen and (max-width: 1199.98px) {
       .about__icon {
         font-size: 10rem;
@@ -170,6 +170,9 @@ ORDER: base + typography > general layout + grid > page layout > components
   font-family: "Comfortaa", cursive;
   font-size: 1.8rem;
   font-weight: 400; }
+  @media only screen and (max-width: 991.98px) {
+    .header {
+      font-size: 1.6rem; } }
   .header__my-bg-dark {
     background-color: #09203f; }
   .header nav .navbar-brand {
@@ -179,6 +182,8 @@ ORDER: base + typography > general layout + grid > page layout > components
         margin-left: 1rem; } }
   .header nav .my-nav-link {
     padding: .6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background: linear-gradient(to bottom, #537895 0%, #537895 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
@@ -192,7 +197,9 @@ ORDER: base + typography > general layout + grid > page layout > components
         background-size: 3px 18px; } }
     @media only screen and (max-width: 991.98px) {
       .header nav .my-nav-link {
-        background-size: 3px 2px; } }
+        background-size: 3px 2px;
+        margin-top: .5rem;
+        margin-bottom: .5rem; } }
     .header nav .my-nav-link:hover {
       background-size: 4px 50px; }
   .header nav .navbar-toggler-icon {
@@ -200,6 +207,9 @@ ORDER: base + typography > general layout + grid > page layout > components
     width: 3rem; }
   .header nav img {
     width: 100%; }
+    @media only screen and (max-width: 991.98px) {
+      .header nav img {
+        width: 75%; } }
     @media only screen and (max-width: 767.98px) {
       .header nav img {
         width: 65%; } }
@@ -238,8 +248,11 @@ ORDER: base + typography > general layout + grid > page layout > components
     margin: 7rem auto; }
 
 .projects {
-  padding: 5rem;
+  padding: 8rem 5rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 991.98px) {
+    .projects {
+      padding: 5rem; } }
   @media only screen and (max-width: 767.98px) {
     .projects {
       padding: 3rem; } }
