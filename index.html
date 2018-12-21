@@ -24,28 +24,28 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top header__my-bg-dark">
+      <nav id="nav" class="navbar navbar-expand-lg fixed-top header__my-bg-dark">
         <a class="navbar-brand my-3" href="#"><img src="img/anncode copy.png" alt="anncode logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars header__icon-toggler"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav text-right m-auto">
-            <li class="nav-item active">
-              <a class="my-nav-link d-inline-block mx-4" href="#">Home<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="my-nav-link d-inline-block mx-4 active" href="#" data-hover="home">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-inline-block mx-4" href="#projects">Projects</a>
+              <a class="my-nav-link d-inline-block mx-4" href="#projects" data-hover="projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-inline-block mx-4" href="#about">About me</a>
+              <a class="my-nav-link d-inline-block mx-4" href="#about" data-hover="about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="my-nav-link d-inline-block mx-4" href="#contact">Contact</a>
+              <a class="my-nav-link d-inline-block mx-4" href="#contact" data-hover="contact">Contact</a>
             </li>
           </ul>
           <div class="d-flex justify-content-end">
-              <a href="#contact" class="btn btn__outline m-3"  role="button">HIRE ME</a>
+              <a href="#contact" data-hover="contact" class="btn btn__outline m-3"  role="button">HIRE ME</a>
           </div>
             
         </div>
@@ -102,10 +102,10 @@
 
             <div class="projects__text col-lg-5 offset-lg-1 align-self-center">
               <h6 class="heading-2 mt-5 mb-3 heading-2--dark">project</h6>
-              <h3 class="heading-3 mb-4">Landing page</h3>
-              <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
-              <a class="btn btn__social mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
-              <a class="btn btn__social mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">code</a>
+              <h3 class="heading-3 mb-4">Project in Bootstrap 4.0</h3>
+              <p class="lead mb-5">I created a simple landing page using bootstrap classes in html and minor css modifications.</p>
+              <a class="btn btn__social mr-4" href="https://anna-bartkowiak.github.io/Bootstrap1/" role="button" target="_blank">demo</a>
+              <a class="btn btn__social mr-4" href="https://github.com/Anna-Bartkowiak/Bootstrap1.git" role="button" target="_blank">code</a>
             </div>
           </div>
         </div>
@@ -120,10 +120,10 @@
 
             <div class="projects__text col-lg-5 offset-lg-1 align-self-center">
               <h6 class="heading-2 mt-5 mb-3">project</h6>
-              <h3 class="heading-3 mb-4">Portfolio for graphic designer</h3>
-              <p class="lead mb-5">Tempora doloribus facilis fugiat sunt ex.</p>
-              <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak?tab=repositories" role="button" target="_blank">demo</a>
-              <a class="btn btn__outline mr-4" href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" role="button" target="_blank">code</a>
+              <h3 class="heading-3 mb-4">Website for UX designer</h3>
+              <p class="lead mb-5">Portfolio created using html5, css3, mixitup plugin and simple javascript functions.</p>
+              <a class="btn btn__outline mr-4" href="http://adambartoszewski.pl/" role="button" target="_blank">demo</a>
+              <a class="btn btn__outline mr-4" href="https://github.com/Anna-Bartkowiak/Adam-portfolio.git" role="button" target="_blank">code</a>
             </div>
           </div>
         </div>
@@ -344,19 +344,19 @@
             <ul class="list-unstyled">
               <li>
                 <i class="fab fa-github-alt mr-3"></i>
-                <a href="https://github.com/Anna-Bartkowiak?tab=repositories" class="footer__link-color" role="button" target="_blank">Github</a>
+                <a href="https://github.com/Anna-Bartkowiak?tab=repositories" class="link-color" role="button" target="_blank">Github</a>
               </li> 
               <li>
                 <i class="fab fa-linkedin-in mr-3"></i>
-                <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" class="footer__link-color" role="button" target="_blank">Linkedin</a>
+                <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" class="link-color" role="button" target="_blank">Linkedin</a>
               </li> 
               <li>
                 <i class="fas fa-phone mr-3"></i>
-                <a href="tel:+48791467720" class="footer__link-color" role="button" target="_blank">791 467 720</a>
+                <a href="tel:+48791467720" class="link-color" role="button" target="_blank">791 467 720</a>
               </li>
               <li>
                 <i class="fas fa-envelope mr-3"></i>
-                <a href="mailto:anncodewaw@gmail.com" class="footer__link-color" role="button" target="_blank">anncodewaw@gmail.com</a>
+                <a href="mailto:anncodewaw@gmail.com" class="link-color" role="button" target="_blank">anncodewaw@gmail.com</a>
               </li>
             </ul> 
           </div>
@@ -366,32 +366,32 @@
             <ul class="list-unstyled">
               <li class="my-sm-font-size">
                 <i class="fab fa-css3-alt mr-3"></i>
-                <a href="https://www.udemy.com/certificate/UC-VGB30UTI/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Advanced CSS & Sass</a>
+                <a href="https://www.udemy.com/certificate/UC-VGB30UTI/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="link-color" target="_blank">Advanced CSS & Sass</a>
               </li>
 
               <li class="my-sm-font-size">
                 <i class="fas fa-bold mr-3"></i>
-                <a href="https://www.udemy.com/certificate/UC-FH92E2RD/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Bootstrap 4</a>
+                <a href="https://www.udemy.com/certificate/UC-FH92E2RD/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="link-color" target="_blank">Bootstrap 4</a>
               </li>
 
               <li class="my-sm-font-size">
                 <i class="fab fa-js-square mr-3"></i>
-                <a href="https://javascript30.com/" class="footer__link-color" target="_blank">30 Day Vanilla JS</a>
+                <a href="https://javascript30.com/" class="link-color" target="_blank">30 Day Vanilla JS</a>
               </li>
 
               <li class="my-sm-font-size">
                 <i class="fab fa-free-code-camp mr-3"></i>
-                <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" class="footer__link-color" target="_blank">freeCodeCamp</a>
+                <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" class="link-color" target="_blank">freeCodeCamp</a>
               </li>
 
               <li class="my-sm-font-size">
                 <i class="fas fa-sync-alt mr-3"></i>
-                <a href="https://www.udemy.com/certificate/UC-9DYUF83K/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="footer__link-color" target="_blank">Basics of Scrum, Agile and Project Delivery </a>
+                <a href="https://www.udemy.com/certificate/UC-9DYUF83K/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" class="link-color" target="_blank">Basics of Scrum, Agile and Project Delivery </a>
               </li>
 
               <li class="my-sm-font-size">
                 <i class="fab fa-instagram mr-3"></i>
-                <a href="https://www.instagram.com/p/BqVYmh8gOC6/?utm_source=ig_web_button_share_sheet" class="footer__link-color" target="_blank">Challenge #codenovember</a>
+                <a href="https://www.instagram.com/p/BqVYmh8gOC6/?utm_source=ig_web_button_share_sheet" class="link-color" target="_blank">Challenge #codenovember</a>
               </li>
             </ul>
           </div>
@@ -400,23 +400,23 @@
             <p class="text-uppercase my-4">resources</p>
             <ul class="list-unstyled">
               <li class="my-sm-font-size">
-                <a href="https://www.w3.org/" class="footer__link-color" target="_blank">World Wide Web Consortium</a>
+                <a href="https://www.w3.org/" class="link-color" target="_blank">World Wide Web Consortium</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://developer.mozilla.org/en-US/" class="footer__link-color" target="_blank">MDN web docs</a>
+                <a href="https://developer.mozilla.org/en-US/" class="link-color" target="_blank">MDN web docs</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://stackoverflow.com/" class="footer__link-color" target="_blank">Stackoverflow</a>
+                <a href="https://stackoverflow.com/" class="link-color" target="_blank">Stackoverflow</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://github.com/" class="footer__link-color" target="_blank">Github</a>
+                <a href="https://github.com/" class="link-color" target="_blank">Github</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://docs.emmet.io/cheat-sheet/" class="footer__link-color" target="_blank">Emmet</a>
+                <a href="https://docs.emmet.io/cheat-sheet/" class="link-color" target="_blank">Emmet</a>
               </li>
             </ul>
           </div>
@@ -425,19 +425,19 @@
             <p class="text-uppercase my-4">inspirations</p>
             <ul class="list-unstyled">
               <li class="my-sm-font-size">
-                <a href="https://www.awwwards.com/" class="footer__link-color" target="_blank">Awwwards</a>
+                <a href="https://www.awwwards.com/" class="link-color" target="_blank">Awwwards</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://medium.com/topic/technology" class="footer__link-color" target="_blank">Medium</a>
+                <a href="https://medium.com/topic/technology" class="link-color" target="_blank">Medium</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://github.com/" class="footer__link-color" target="_blank">Github</a>
+                <a href="https://github.com/" class="link-color" target="_blank">Github</a>
               </li>
 
               <li class="my-sm-font-size">
-                <a href="https://css-tricks.com/" class="footer__link-color" target="_blank">Css-tricks</a>
+                <a href="https://css-tricks.com/" class="link-color" target="_blank">Css-tricks</a>
               </li>
             </ul>
           </div>
@@ -446,12 +446,14 @@
         <div class="row mx-auto footer__border text-center border-left-0 border-right-0">
           <div class="col">
             <p class="my-3">&copy; 2018 Code by 
-              <a href="https://anna-bartkowiak.github.io/AnnCode-v0001/" class="footer__link-color" role="button" target="_blank">anncode.pl</a>
+              <a href="https://anna-bartkowiak.github.io/AnnCode-v0001/" class="link-color" role="button" target="_blank">anncode.pl</a>
             </p>
           </div>
         </div>
 
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-right arrow-up">
+          <a href="#" class="link-color">back to top &raquo;</a>
+        </p>
       </div>
     </footer>
 
@@ -461,11 +463,14 @@
       <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer> -->
 
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/active-item-page-scroll.js"></script>
   </body>
 </html>

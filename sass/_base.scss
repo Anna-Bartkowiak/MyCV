@@ -94,14 +94,25 @@ hr {
 
 .link-color {
     color: $color-grey-light-2;
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover {
         color: $color-grey-dark-2;
+        text-decoration: none;
     }
 }
 
 ::selection {
     background-color: #66ccff;
     color: #fff;
+}
+
+.arrow-up {
+    position: absolute;
+    bottom: 0;
+    right: -5.5rem;
+    margin: 0;
+    font-size: 1.7rem;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
 }
