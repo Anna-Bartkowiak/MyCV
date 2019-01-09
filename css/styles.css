@@ -7,7 +7,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 991.98px) {
     html {
       font-size: 62.5%; } }
@@ -29,7 +30,8 @@ body {
   color: #193358;
   font-size: 1.6rem;
   line-height: 1.7;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  background-color: #e9ecef; }
 
 .row {
   margin-left: 0;
@@ -68,6 +70,23 @@ hr {
   font-size: 1.7rem;
   transform: rotate(-90deg);
   transform-origin: 0 0; }
+
+.separator {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  width: 100%; }
+  .separator::before, .separator::after {
+    content: '';
+    position: absolute; }
+  .separator::before {
+    background: #7593AA;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 100% 100%;
+    transform: rotate(-1deg); }
 
 /*
 0 - 575.98px:       Phone portrait
@@ -285,7 +304,7 @@ ORDER: base + typography > general layout + grid > page layout > components
   .projects--1, .projects--3 {
     background-color: #09203f;
     color: #e9ecef; }
-  .projects--2 {
+  .projects--2, .projects--4 {
     background-color: #e9ecef; }
 
 .footer {
